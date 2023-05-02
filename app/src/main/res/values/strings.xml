@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment8</string>
+    <string name="app_title">Blackjack</string>
+    <string name="dealer_tag">Dealer</string>
+    <string name="player_tag">Player</string>
+    <string name="stay_button">Stay</string>
+    <string name="hit_button">Hit</string>
+</resources>

@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BlackJackMainActivity" android:background="#D34CAF50" android:id="@+id/mainLayout">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="56sp" android:textColor="#0F407C"
+            android:fontFamily="casual" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintVertical_bias="0.024" android:id="@+id/gameTitle"/>
+    <TextView
+            android:text="@string/dealer_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/dealerLabel"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.16"/>
+    <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/dealerScore"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.215"
+            android:textSize="16sp"/>
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/robodog"
+            android:id="@+id/dcardOne"
+            android:background="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.272" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.322"/>
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="160dp" app:srcCompat="@drawable/robodog" android:id="@+id/dcardTwo"
+            android:background="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.322"
+            app:layout_constraintHorizontal_bias="0.724"/>
+    <TextView
+            android:text="@string/player_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/playerLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.546" android:textSize="24sp"/>
+    <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/playerScore"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.592"/>
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            android:id="@+id/pcardOne"
+            android:background="#000000"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272" app:layout_constraintVertical_bias="0.795"/>
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            android:id="@+id/pcardTwo"
+            android:background="#000000"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.795" app:layout_constraintHorizontal_bias="0.724"/>
+    <Button
+            android:text="@string/stay_button"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:id="@+id/stayButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintVertical_bias="0.983"/>
+    <Button
+            android:text="@string/hit_button"
+            android:layout_width="160dp"
+            android:layout_height="55dp" android:id="@+id/hitButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.968"
+            app:layout_constraintVertical_bias="0.983"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
